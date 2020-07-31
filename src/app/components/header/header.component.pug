@@ -1,0 +1,13 @@
+html
+	div
+		h1(style="backgoundColor: #666") Header
+			button.btn.btn-primary(type='button') Primary
+
+		input((input)="num = $event.target.value")
+
+		p(*ngIf="num == 2") EXIBIDO TRUE
+		p(*ngIf="num == 3") NÃO EXIBIDO FALSE
+
+		hr
+
+		p( *ngFor="let n of arrNumeros") {{n}} 
